@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "588750870349",
+    "project_id": "aruchandu-49052",
+    "storage_bucket": "aruchandu-49052.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:588750870349:android:bfbd132c734b9b40fec904",
+        "android_client_info": {
+          "package_name": "com.chandrachaan.aruchandu"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "588750870349-p1rvod0sicssqd98sgjtkprq3d9cbk4q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHQAKsZ1EEi1ojB6-TPkJIXieY58zC55s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "588750870349-p1rvod0sicssqd98sgjtkprq3d9cbk4q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

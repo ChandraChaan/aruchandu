@@ -17,11 +17,12 @@ class _realtimeDBState extends State<realtimeDB> {
   List<Map<String, dynamic>> fireDdata = [];
 
   insertData() {
-    pressing = pressing + 1;
-    fireDdata.clear();
-    for (int a = 0; a < pressing; a++) fireDdata.add({'value': a});
-    print('new value ' + fireDdata.toString());
-    _databaseReference.child('path').set(jsonEncode(fireDdata));
+    _databaseReference.once().then((event) {
+      final dataSnapshot = event.snapshot.child('path').value;
+      pressing = int.parse(dataSnapshot.toString()) + 1;
+      _databaseReference.child('path').set(pressing);
+      setState(() {});
+    });
   }
 
   showDb() {

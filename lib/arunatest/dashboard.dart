@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 
 class dashBoard extends StatelessWidget {
+  // this below code have drawer
   Drawer mainDrawer() {
     return Drawer(
       // Add a ListView to the drawer. This ensures the user can scroll
@@ -99,6 +100,7 @@ class dashBoard extends StatelessWidget {
           ),
           SizedBox(
             height: 300,
+            // this is static values so i am used this static gridview
             child: GridView.count(
               primary: false,
               padding: const EdgeInsets.all(20),
@@ -138,6 +140,7 @@ class dashBoard extends StatelessWidget {
             height: 20,
           ),
           Padding(
+            // if you need to reduce padding, kindly you can
             padding: const EdgeInsets.all(18.0),
             child: Container(
               height: 90,
@@ -163,6 +166,7 @@ class dashBoard extends StatelessWidget {
                         onPressed: () {},
                         child: Text('Post product'),
                         style: ElevatedButton.styleFrom(
+                          // you need to change the color, kindly you can
                             primary: Colors.deepOrange, shape: StadiumBorder()),
                       ),
                     )
